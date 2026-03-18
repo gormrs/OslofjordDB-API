@@ -20,7 +20,7 @@ COPY /docker_fuseki_config.ttl /fuseki
 WORKDIR /fuseki
 
 # Download and copy the tar.gz file into the container
-ADD https://dlcdn.apache.org/jena/binaries/apache-jena-fuseki-5.3.0.tar.gz /fuseki
+ADD https://archive.apache.org/dist/jena/binaries/apache-jena-fuseki-5.3.0.tar.gz /fuseki
 
 # Extract the tar.gz file
 RUN tar -xvzf apache-jena-fuseki-5.3.0.tar.gz
